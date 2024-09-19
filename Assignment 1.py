@@ -1,5 +1,5 @@
 # Haani Khan
-# I am not actually from Seattle sadly.
+# I am not actually from Seattle thankfully.
 #ASSIGNMENT 1.1
 print ("Haani Khan")
 print ('2400 Jackson St')
