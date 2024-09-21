@@ -6,7 +6,6 @@ ASSIGNMENT: Stock Transaction Program
 """
 
 # code starts here
-
 shares_bought = 2000
 paid_stock =  (shares_bought * 40)
 shares_sold = 2000
