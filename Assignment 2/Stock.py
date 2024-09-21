@@ -29,5 +29,4 @@ Joe sold the stock for $85500.0.
 Joe has $5500.0 after he sold the stock.
 Joe paid the broker $165.0.
 Joe has $5335.0 after he paid the broker.
-
 """
