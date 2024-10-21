@@ -15,13 +15,6 @@ while num > 0:
 
 # OUTPUT: 
 """
-@khanhaani22 ➜ /workspaces/RU-Newark (main) $
-Enter a number: 13
-1
-0
-1
-1
-@khanhaani22 ➜ /workspaces/RU-Newark (main) $ 
 Enter a number: 55
 1
 1
