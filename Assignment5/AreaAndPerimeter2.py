@@ -34,6 +34,26 @@ while i == 0:
         i += 1
 # OUTPUT: 
 """
-
+Would you like to calculate... 
+1. Area of a circle
+2. Circumference of a circle
+3. Area of a rectangle
+4. Perimeter of a rectangle
+q. Quit the program
+Type the option (1,2,3,4, or q): 
+4
+What is the length of the rectangle? 
+8
+What is the width of the rectangle? 
+1
+The perimeter is 18 units.
+Would you like to calculate... 
+1. Area of a circle
+2. Circumference of a circle
+3. Area of a rectangle
+4. Perimeter of a rectangle
+q. Quit the program
+Type the option (1,2,3,4, or q): 
+q
 """
 
