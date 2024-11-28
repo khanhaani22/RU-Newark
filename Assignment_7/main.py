@@ -1,15 +1,3 @@
-def view_contacts(file_name):
-    contacts = open(file_name,'r')
-    print(contacts)
-    
-#def add_contact():
-
-#def update_contact():
-
-#def delete_contact():
-
-#def search_contact():
-
 def main():
     file_name = 'contacts.txt'
     while True:
@@ -39,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
