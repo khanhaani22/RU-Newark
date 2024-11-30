@@ -13,20 +13,20 @@ def add_contact(file_name):
         num_lines += 1
     new_contacts = open(file_name, 'a')
     while True:
-        full_name = input("Please enter full name of person to add to contacts.")
+        full_name = input("Please enter full name of person to add to contacts.\n")
         if " " not in full_name:
-            print("Please try again, and enter first name and last name.")
+            print("#Please try again, and enter first name and last name.")
         else:
             while True:
-                number = input("Please enter the phone number")
+                number = input("Please enter the phone number.\n")
                 if '-' in number: 
                     number = number.replace('-', '')
                 if len(number) != 10:
-                    print("Phone number is greater than 10 digits. Please try again.")
+                    print("#Phone number is greater or less than 10 digits. Please try again.")
                 try:
                     int_number = int(number)
                 except ValueError:
-                    print("Please input number with only digits.")
+                    print("#Please input number with only digits.")
                 if len(number) == 10: 
                     break
             break
@@ -35,20 +35,20 @@ def add_contact(file_name):
             
 def update_contact(file_name):
     while True:
-        full_name = input("Please enter full name of person to update.")
+        full_name = input("Please enter full name of person to update.\n")
         if " " not in full_name:
-                print("Please try again, and enter first name and last name.")
+                print("#Please try again, and enter first name and last name.")
         else:
             while True:
-                number = input("Please enter the new phone number")
+                number = input("Please enter the new phone number.\n")
                 if '-' in number: 
                     number = number.replace('-', '')
                 if len(number) != 10:
-                    print("New phone number is greater than 10 digits. Please try again.")
+                    print("#New phone number is greater or less than 10 digits. Please try again.")
                 try:
                     int_number = int(number)
                 except ValueError:
-                    print("Please input number with only digits.")
+                    print("#Please input number with only digits.")
                 if len(number) == 10: 
                     break
             break
@@ -73,9 +73,9 @@ def update_contact(file_name):
 
 def search_contact(file_name):
     while True:
-        full_name = input("Please enter full name of person to search for.")
+        full_name = input("Please enter full name of person to search for.\n")
         if " " not in full_name:
-                print("Please try again, and enter first name and last name.")
+                print("#Please try again, and enter first name and last name.")
         else:
             break
     contacts = open(file_name, 'r')
@@ -84,16 +84,17 @@ def search_contact(file_name):
     for line in lines:
         if full_name in line:
             flag = True
-            print("We have found person in contact list")
+            print("Person found in contact list.")
+            print(line)
             break
     if flag == False:
         print("We did not find person in contacts.")
 
 def delete_contact(file_name):
     while True:
-        full_name = input("Please enter full name of person to delete fron contacts.")
+        full_name = input("Please enter full name of person to delete fron contacts.\n")
         if " " not in full_name:
-                print("Please try again, and enter first name and last name.")
+                print("#Please try again, and enter first name and last name.")
         else:
             break
     contacts = open(file_name, 'r')
@@ -115,7 +116,7 @@ def delete_contact(file_name):
     contacts.close()
 
 def main():
-    file_name = 'contacts.txt'
+    file_name = 'Assignment_7/contacts.txt'
     while True:
         print("\nContact Management System")
         print("1. View all contacts")
@@ -125,17 +126,17 @@ def main():
         print("5. Delete a contact ")
         print("6. Exit")
         choice = input("Enter your choice: ")
-
+        #some of the choices did not correctly corespond to the number choice, so I edited it
         if choice == '1':
             view_contacts(file_name)
         elif choice == '2':
             add_contact(file_name)
         elif choice == '3':
-            update_contact(file_name)
-        elif choice == '4':
-            delete_contact(file_name)
-        elif choice == '5':
             search_contact(file_name)
+        elif choice == '4':
+            update_contact(file_name)
+        elif choice == '5':
+            delete_contact(file_name)
         elif choice == '6':
             break
         else:
