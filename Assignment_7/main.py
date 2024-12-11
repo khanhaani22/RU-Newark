@@ -116,7 +116,7 @@ def delete_contact(file_name):
     contacts.close()
 
 def main():
-    file_name = 'Assignment_7/contacts.txt'
+    file_name = 'contacts.txt'
     while True:
         print("\nContact Management System")
         print("1. View all contacts")
