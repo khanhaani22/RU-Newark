@@ -10,3 +10,15 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
+# OUTPUT
+"""
+What name would you like to check for?
+Elizabeth
+Name was found!
+
+What name would you like to check for? 
+Haani
+Name not found.
+"""
+#
